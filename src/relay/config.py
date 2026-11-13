@@ -53,8 +53,11 @@ RPM_PRESSURE_DELAY_S = 2.0
 # If the send-lease wait estimate exceeds this, degrade retrieval instead of
 # waiting (the ladder's 'what do you do with retrieval when the limit is close').
 LEASE_DEGRADE_WAIT_S = 10.0
-# Single-flight coalescing (orchestrator) needs no TTL: outcomes hand off via futures.
-
+# Token estimation for the send-lease. Measured on this corpus: paper text
+# tokenizes at ~4.2 chars/token (numbers/tables inflate it; prose dilutes it),
+# and completions average ~300 tokens against a 600 cap.
+TOKEN_CHARS_RATIO = 4.2
+EST_COMPLETION_TOKENS = 300
 TIMEOUT_CONNECT_S = 5.0
 TIMEOUT_TTFT_S = 12.0
 TIMEOUT_INTER_TOKEN_S = 10.0

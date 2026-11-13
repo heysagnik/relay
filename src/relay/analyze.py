@@ -65,7 +65,7 @@ def _derive_limits_from_calibration() -> Dict[str, Dict[str, str]]:
                 "rpm": ("not measured", "", "low"),
                 "tpm": ("not measured", "", "low"),
                 "rpd": ("not measured", "", "low"),
-                "tpd": ("200,000", "provider documentation (not probed — measuring it spends the whole daily budget)", "medium"),
+                "tpd": ("200,000", "provider documentation", "medium"),
                 "inflight": ("not measured", "", "low"),
                 "at_limit": ("not measured", "", "low"),
                 "recovery": ("not measured", "", "low"),
@@ -115,7 +115,7 @@ def _derive_limits_from_calibration() -> Dict[str, Dict[str, str]]:
             best = max(ok_c, int(prev[0]) if prev[0].isdigit() else 0)
             e["inflight"] = (
                 f"{best} concurrent OK",
-                "parallel tiny-request probe (how many succeeded simultaneously)",
+                "parallel tiny-request probe",
                 "medium",
             )
 

@@ -12,11 +12,13 @@ from dotenv import load_dotenv
 
 from src.relay.budget import BudgetLedger
 from src.relay.config import (
+    EST_COMPLETION_TOKENS,
     LOGS_DIR,
     TIMEOUT_CONNECT_S,
     TIMEOUT_INTER_TOKEN_S,
     TIMEOUT_TOTAL_S,
     TIMEOUT_TTFT_S,
+    TOKEN_CHARS_RATIO,
 )
 
 load_dotenv()
@@ -129,6 +131,7 @@ class GroqClient:
         response_format: Optional[Dict] = None,
         max_retries: int = 2,
         on_retry: Optional[Callable[[str, float], None]] = None,
+        lease_id: Optional[str] = None,
     ) -> AsyncGenerator[StreamChunk, None]:
         url = f"{self.base_url}/chat/completions"
         payload = {
@@ -144,14 +147,13 @@ class GroqClient:
 
         # Phase A1: book the send against the measured windows *before* firing,
         # so predictable RPM/TPM pressure becomes queue delay, not 429 retries.
-        lease_id = None
-        if self.budget_ledger is not None:
+        # A caller that pre-booked (to keep the throttle wait out of a pipeline
+        # slot) passes lease_id; retries within this call send unbooked.
+        if lease_id is None and self.budget_ledger is not None:
             prompt_chars = sum(len(m.get("content", "")) for m in messages)
-            est_tokens = int(prompt_chars / 3.8) + max_tokens
+            est_tokens = int(prompt_chars / TOKEN_CHARS_RATIO) + EST_COMPLETION_TOKENS
             lease_id, lease_waited_s = await self.budget_ledger.await_send_slot(model, est_tokens)
             if lease_waited_s > 0.05 and on_retry:
-                # Throttle wait is 'waiting', not 'retrying' — the waterfall
-                # splits buckets on the reason prefix.
                 on_retry("lease_wait", lease_waited_s)
 
         now = time.time()

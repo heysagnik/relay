@@ -18,10 +18,12 @@ try:
         MIN_CONCURRENCY,
         MODEL_DRAFT,
         MODEL_TRIAGE,
+        EST_COMPLETION_TOKENS,
         LEASE_DEGRADE_WAIT_S,
         RETRIEVAL_SETTINGS,
         RERANK_GATE_THRESHOLD,
         SCORE_GATE_THRESHOLD,
+        TOKEN_CHARS_RATIO,
     )
     from relay.groq_client import GroqClient, StreamChunk
     from relay.retrieval import RetrievalEngine, RetrievedPassage
@@ -36,10 +38,12 @@ except ImportError:
         MIN_CONCURRENCY,
         MODEL_DRAFT,
         MODEL_TRIAGE,
+        EST_COMPLETION_TOKENS,
         LEASE_DEGRADE_WAIT_S,
         RETRIEVAL_SETTINGS,
         RERANK_GATE_THRESHOLD,
         SCORE_GATE_THRESHOLD,
+        TOKEN_CHARS_RATIO,
     )
     from src.relay.groq_client import GroqClient, StreamChunk
     from src.relay.retrieval import RetrievalEngine, RetrievedPassage
@@ -176,6 +180,21 @@ class RequestContext:
 
 def _cache_key(question: str) -> str:
     return re.sub(r"\s+", " ", question.strip().lower())
+
+
+def _triage_est_tokens(question: str) -> int:
+    """Estimated triage call size for lease booking (chars measured, tokens at
+    the calibrated corpus ratio, completion estimate for the 150-token cap)."""
+    prompt_chars = len(TRIAGE_SYSTEM_PROMPT) + len(question) + 30
+    return int(prompt_chars / TOKEN_CHARS_RATIO) + 100
+
+
+def _draft_est_tokens(question: str, setting: str) -> int:
+    """Estimated draft call size for lease booking. Passages are trimmed to
+    ~1000 chars each by _prepare_passages, so the prompt is bounded."""
+    top_k = RETRIEVAL_SETTINGS.get(setting, RETRIEVAL_SETTINGS["A"]).top_k
+    prompt_chars = len(DRAFT_SYSTEM_PROMPT) + top_k * 1000 + len(question) + 40
+    return int(prompt_chars / TOKEN_CHARS_RATIO) + EST_COMPLETION_TOKENS
 
 
 class RelayOrchestrator:
@@ -430,11 +449,70 @@ class RelayOrchestrator:
             if delay_s:
                 ctx.record_event("admission_delay")
                 await asyncio.sleep(delay_s)
+
             if admission_action == "budget_exhausted":
-                # Daily exhaustion is not a concurrency signal; do not shrink
-                # the limiter for it (queued requests would die for nothing —
-                # admission refuses them instantly instead).
-                pass
+                # Daily exhaustion learned or counted: instant honest refusal,
+                # no slot, no lease, no queue time.
+                ctx.status = "rate_limited"
+                ctx.answer_grade = "refused_correctly"
+                ctx.refusal_reason = "daily_quota_exhausted"
+                ctx.final_answer = (
+                    "I can't answer this one right now. Our model provider's free-tier daily quota "
+                    "ran out today. Nothing is queued and retrying now would just fail. "
+                    "Please ask again after the quota resets at 00:00 UTC."
+                )
+                ctx.record_event("budget_exhausted_exit")
+                if on_flush:
+                    on_flush(ctx.final_answer)
+                return await finish()
+
+            # Effective retrieval setting: the ladder's TPM-pressure downgrade,
+            # plus lease-aware degradation (long predicted wait ⇒ fewer passages)
+            # unless this is a quality sweep that must use the named setting.
+            effective_setting = retrieval_setting
+            if admission_action == "degraded_retrieval":
+                if getattr(ctx, "_use_requested_setting", False):
+                    ctx.record_event("admission_degrade_declined")
+                else:
+                    effective_setting = "A-degraded"
+            elif (
+                getattr(ctx, "_allow_lease_degrade", True)
+                and admission_action == "normal"
+                and effective_setting != "A-degraded"
+            ):
+                est_full = _draft_est_tokens(question, effective_setting)
+                if await self.budget.peek_wait(MODEL_DRAFT, est_full) > LEASE_DEGRADE_WAIT_S:
+                    effective_setting = "A-degraded"
+                    ctx.record_event("lease_degrade")
+
+            # Book BOTH provider leases before taking a slot: a 30 s throttle
+            # wait inside a slot starves the whole pipeline (measured). The
+            # draft lease is bounded by the request's remaining patience — a
+            # request that cannot be served in time gives up here, instantly
+            # and honestly, instead of dying in the queue.
+            remaining_s = (self.patience_ms - (time.time() - ctx.enqueue_time) * 1000) / 1000
+            triage_est = _triage_est_tokens(question)
+            triage_lease, _ = await self.budget.await_send_slot(
+                MODEL_TRIAGE, triage_est, max_wait_s=min(5.0, max(0.5, remaining_s))
+            )
+            draft_est = _draft_est_tokens(question, effective_setting)
+            draft_lease, draft_waited = await self.budget.await_send_slot(
+                MODEL_DRAFT, draft_est, max_wait_s=max(0.5, remaining_s)
+            )
+            if draft_lease is None:
+                # Wait budget exhausted: give up rather than run the pipeline
+                # into a queue death. The slot was never taken.
+                ctx.status = "timeout"
+                ctx.refusal_reason = "lease_patience_exceeded"
+                ctx.final_answer = (
+                    "I had to give up on this request: the provider's token budget is "
+                    "throttled right now and the wait would exceed the patience limit. "
+                    "Please try again in a few seconds."
+                )
+                ctx.record_event("lease_give_up")
+                if on_flush:
+                    on_flush(ctx.final_answer)
+                return await finish()
 
             acquired = await self.limiter.acquire(priority=priority, timeout_s=remaining_s)
             if not acquired:
@@ -452,8 +530,8 @@ class RelayOrchestrator:
                 ctx.queue_len_at_dequeue = self.limiter.waiting
                 ctx.record_event("dequeue")
                 await self._run_pipeline(
-                    ctx, question, retrieval_setting, key, on_flush,
-                    admission_action, draft_model,
+                    ctx, question, effective_setting, key, on_flush,
+                    admission_action, draft_model, triage_lease, draft_lease,
                 )
             finally:
                 self.limiter.release()
@@ -490,45 +568,15 @@ class RelayOrchestrator:
         self,
         ctx: RequestContext,
         question: str,
-        retrieval_setting: str,
+        effective_setting: str,
         cache_key: str,
         on_flush: Optional[Callable[[str], None]],
         admission_action: str,
         draft_model: str,
+        triage_lease: Optional[str],
+        draft_lease: Optional[str],
     ) -> None:
         retry_note = self._make_retry_note(ctx)
-
-        if admission_action == "budget_exhausted":
-            ctx.status = "rate_limited"
-            ctx.answer_grade = "refused_correctly"
-            ctx.refusal_reason = "daily_quota_exhausted"
-            ctx.final_answer = (
-                "I can't answer this one right now. Our model provider's free-tier daily quota "
-                "ran out today. Nothing is queued and retrying now would just fail. "
-                "Please ask again after the quota resets at 00:00 UTC."
-            )
-            ctx.record_event("budget_exhausted_exit")
-            if on_flush:
-                on_flush(ctx.final_answer)
-            self._publish(ctx, cache_key)
-            return
-
-        effective_setting = retrieval_setting
-        if admission_action == "degraded_retrieval":
-            if getattr(ctx, "_use_requested_setting", False):
-                # Quality sweeps measure the named setting; the ladder's
-                # TPM-pressure downgrade is recorded but not applied.
-                ctx.record_event("admission_degrade_declined")
-            else:
-                effective_setting = "A-degraded"
-        elif getattr(ctx, "_allow_lease_degrade", True) and admission_action == "normal" and effective_setting not in ("A-degraded",):
-            # Lease-aware degradation: if the draft send would wait longer than
-            # the degrade threshold on the measured TPM window, fetch fewer
-            # passages instead of making the person wait (Phase A integration).
-            est_full = int(len(question) / 3.8) + RETRIEVAL_SETTINGS[effective_setting].top_k * 350 + 600
-            if await self.budget.peek_wait(MODEL_DRAFT, est_full) > LEASE_DEGRADE_WAIT_S:
-                effective_setting = "A-degraded"
-                ctx.record_event("lease_degrade")
         ctx.retrieval_setting = effective_setting
 
         # S1: Triage (fast model, JSON mode). Triage is an optimisation, not a
@@ -540,7 +588,9 @@ class RelayOrchestrator:
             ctx.record_event("s1_skipped_triage_quota")
             triage_result = {"classification": "answerable", "target_paper": "ALL", "queries": [question]}
         else:
-            triage_result = await self._run_stage1_triage(ctx, question, retry_note)
+            triage_result = await self._run_stage1_triage(
+                ctx, question, retry_note, lease_id=triage_lease
+            )
         ctx.record_event("s1_end")
 
         classification = triage_result.get("classification", "answerable")
@@ -600,12 +650,14 @@ class RelayOrchestrator:
         # S4 + S5: streaming draft with clause verification and recovery loop
         s4_retry_note = self._make_retry_note(ctx)
         await self._run_stage4_and_5_loop(
-            ctx, question, passages, draft_model, on_flush, s4_retry_note
+            ctx, question, passages, draft_model, on_flush, s4_retry_note,
+            lease_id=draft_lease,
         )
         self._publish(ctx, cache_key)
 
     async def _run_stage1_triage(
-        self, ctx: RequestContext, question: str, retry_note: Callable
+        self, ctx: RequestContext, question: str, retry_note: Callable,
+        lease_id: Optional[str] = None,
     ) -> Dict:
         messages = [
             {"role": "system", "content": TRIAGE_SYSTEM_PROMPT},
@@ -624,6 +676,7 @@ class RelayOrchestrator:
                 max_tokens=150,
                 response_format=TRIAGE_JSON_FORMAT,
                 on_retry=lambda reason, sleep_s=0.0: retry_note("s1", reason, sleep_s),
+                lease_id=lease_id,
             ):
                 full_content += chunk.delta_text
                 if chunk.tokens_in:
@@ -667,6 +720,7 @@ class RelayOrchestrator:
         draft_model: str,
         on_flush: Optional[Callable[[str], None]] = None,
         retry_note: Optional[Callable] = None,
+        lease_id: Optional[str] = None,
     ) -> None:
         max_loop_attempts = 2
         current_passages = passages
@@ -705,6 +759,10 @@ class RelayOrchestrator:
                     on_retry=lambda reason, sleep_s=0.0: (
                         retry_note(f"s4_att{loop_attempt}", reason, sleep_s) if retry_note else None
                     ),
+                    # Attempt 1 uses the pre-booked lease (throttle wait stayed
+                    # out of the pipeline slot); a verification-retry re-books
+                    # its own lease because the window has moved on.
+                    lease_id=lease_id if loop_attempt == 1 else None,
                 ):
                     if not provider_first_token_seen and chunk.delta_text.strip():
                         ctx.record_event("s4_provider_first_token")

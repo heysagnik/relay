@@ -23,6 +23,7 @@ class MockLLMClient:
         max_retries: int = 2,
         response_format=None,
         on_retry=None,
+        lease_id=None,
     ):
         prompt = messages[-1]["content"]
         if "Classify this question" in prompt:
@@ -125,7 +126,8 @@ def test_fabricated_citation_is_rejected(tmp_path):
 
             async def stream_chat_completion(self, model, messages, temperature=0.0,
                                              max_tokens=1024, max_retries=2,
-                                             response_format=None, on_retry=None):
+                                             response_format=None, on_retry=None,
+                                             lease_id=None):
                 prompt = messages[-1]["content"]
                 if "Classify this question" in prompt:
                     content = json.dumps(
