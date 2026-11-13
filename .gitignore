@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+results/runs/
+logs/spans.jsonl
+data/budget.json.tmp
+.venv/

@@ -1,0 +1,284 @@
+[
+  {
+    "timestamp": 1794544863.3705475,
+    "phase": "baseline_telemetry",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "latency_ms": 335,
+    "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "968",
+      "x-ratelimit-remaining-tokens": "7976",
+      "x-ratelimit-reset-requests": "46m4.8s",
+      "x-ratelimit-reset-tokens": "180ms"
+    },
+    "body": "{\"id\":\"chatcmpl-dcf88ac6-0a63-4f04-91af-bca3c6b3a7d0\",\"object\":\"chat.completion\",\"created\":1794544861,\"model\":\"qwen/qwen3.8-27b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"pong\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"queue_time\":0.050323153,\"prompt_tokens\":19,\"prompt_time\":0.001015966,\"completion_tokens\":2,\"completion_time\":0.004039016,\"total_tokens\":21,\"total_time\":0.005054982},\"usage_breakdown\":null,\"system_fingerprint\":\"fp_21e59ac2de\",\"x_groq\":{\"id\":\"req_01m79"
+  },
+  {
+    "timestamp": 1794544864.8732426,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 85,
+    "total_ms": 88
+  },
+  {
+    "timestamp": 1794544866.1670125,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 101,
+    "total_ms": 103
+  },
+  {
+    "timestamp": 1794544867.4732497,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 335,
+    "total_ms": 339
+  },
+  {
+    "timestamp": 1794544869.0253465,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 93,
+    "total_ms": 95
+  },
+  {
+    "timestamp": 1794544870.3310866,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 867,
+    "total_ms": 870
+  },
+  {
+    "timestamp": 1794544872.4015512,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 86,
+    "total_ms": 90
+  },
+  {
+    "timestamp": 1794544873.6924548,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 93,
+    "total_ms": 96
+  },
+  {
+    "timestamp": 1794544875.000738,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 93,
+    "total_ms": 98
+  },
+  {
+    "timestamp": 1794544876.5235412,
+    "phase": "concurrency_probe",
+    "model": "qwen/qwen3.8-27b",
+    "status_codes": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "succeeded": 8,
+    "in_flight_observed": 8,
+    "note": "8 simultaneous tiny requests; how many completed OK"
+  },
+  {
+    "timestamp": 1794544878.898057,
+    "phase": "baseline_telemetry",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "latency_ms": 360,
+    "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "999",
+      "x-ratelimit-remaining-tokens": "7912",
+      "x-ratelimit-reset-requests": "1m26.4s",
+      "x-ratelimit-reset-tokens": "659ms"
+    },
+    "body": "{\"id\":\"chatcmpl-3b00f565-223c-4da4-9cc2-9314a4f60ecb\",\"object\":\"chat.completion\",\"created\":1794544876,\"model\":\"openai/gpt-oss-120b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning\":\"The user asks: \\\"Reply with\"},\"logprobs\":null,\"finish_reason\":\"length\"}],\"usage\":{\"queue_time\":0.290597171,\"prompt_tokens\":78,\"prompt_time\":0.0030844,\"completion_tokens\":10,\"completion_time\":0.020621259,\"total_tokens\":88,\"total_time\":0.023705659,\"completion_tokens_details\":{\"reasoning_toke"
+  },
+  {
+    "timestamp": 1794544880.4030383,
+    "phase": "latency_distribution",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "ttft_ms": 373,
+    "total_ms": 375
+  },
+  {
+    "timestamp": 1794544881.983214,
+    "phase": "latency_distribution",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "ttft_ms": 412,
+    "total_ms": 429
+  },
+  {
+    "timestamp": 1794544883.6209817,
+    "phase": "latency_distribution",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "ttft_ms": 201,
+    "total_ms": 219
+  },
+  {
+    "timestamp": 1794544885.0521758,
+    "phase": "latency_distribution",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "ttft_ms": 501,
+    "total_ms": 504
+  },
+  {
+    "timestamp": 1794544886.770058,
+    "phase": "latency_distribution",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "ttft_ms": 360,
+    "total_ms": 361
+  },
+  {
+    "timestamp": 1794544888.3445654,
+    "phase": "latency_distribution",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "ttft_ms": 279,
+    "total_ms": 288
+  },
+  {
+    "timestamp": 1794544889.8482666,
+    "phase": "latency_distribution",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "ttft_ms": 200,
+    "total_ms": 232
+  },
+  {
+    "timestamp": 1794544891.2934046,
+    "phase": "latency_distribution",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "ttft_ms": 363,
+    "total_ms": 381
+  },
+  {
+    "timestamp": 1794544893.4312901,
+    "phase": "concurrency_probe",
+    "model": "openai/gpt-oss-120b",
+    "status_codes": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "succeeded": 8,
+    "in_flight_observed": 8,
+    "note": "8 simultaneous tiny requests; how many completed OK"
+  },
+  {
+    "timestamp": 1794544899.8230677,
+    "phase": "deliberate_429_probe",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "latency_ms": 39,
+    "headers": {
+      "date": "Fri, 13 Nov 2026 04:41:37 GMT",
+      "content-type": "application/json",
+      "content-length": "368",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "retry-after": "2",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "bom",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-remaining-requests": "930",
+      "x-ratelimit-reset-requests": "1h40m48s",
+      "x-request-id": "req_01m79kc3q1ecavd7hf1e53bmyb",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "strict-transport-security": "max-age=15552000",
+      "cf-ray": "a59b1aeafba5fa1c-BOM",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m3sk3njserztkbq434cce4tt` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, Requested 1. Please try again in 2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"requests\",\"code\":\"rate_limit_exceeded\"}}\n"
+  },
+  {
+    "timestamp": 1794544901.8335063,
+    "phase": "recovery_probe",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "latency_ms": 105,
+    "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "929",
+      "x-ratelimit-remaining-tokens": "7962",
+      "x-ratelimit-reset-requests": "1h42m14.4s",
+      "x-ratelimit-reset-tokens": "1.5s"
+    }
+  },
+  {
+    "timestamp": 1794544908.8187666,
+    "phase": "deliberate_429_probe",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 429,
+    "latency_ms": 39,
+    "headers": {
+      "date": "Fri, 13 Nov 2026 04:41:46 GMT",
+      "content-type": "application/json",
+      "content-length": "371",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "retry-after": "2",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "bom",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-remaining-requests": "966",
+      "x-ratelimit-reset-requests": "48m57.6s",
+      "x-request-id": "req_01m79kccg5eczshx46qy65qcbv",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "strict-transport-security": "max-age=15552000",
+      "cf-ray": "a59b1b232ef4fa1c-BOM",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m3sk3njserztkbq434cce4tt` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, Requested 1. Please try again in 2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"requests\",\"code\":\"rate_limit_exceeded\"}}\n"
+  },
+  {
+    "timestamp": 1794544910.831888,
+    "phase": "recovery_probe",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "latency_ms": 420,
+    "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "965",
+      "x-ratelimit-remaining-tokens": "7790",
+      "x-ratelimit-reset-requests": "50m24s",
+      "x-ratelimit-reset-tokens": "1.575s"
+    }
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-13",
+  "models": {
+    "qwen/qwen3.8-27b": {
+      "rpd_used": 342,
+      "tpd_used": 183729,
+      "rpm_window": [
+        1794590942.9915445,
+        1794590948.6843455,
+        1794590968.67079,
+        1794590973.0989509
+      ],
+      "tpm_window": [
+        [
+          1794590942.9915445,
+          228,
+          "qwen/qwen3.8-27b:1794590942.991544"
+        ],
+        [
+          1794590948.6843455,
+          214,
+          "qwen/qwen3.8-27b:1794590948.684345"
+        ],
+        [
+          1794590968.67079,
+          234,
+          "qwen/qwen3.8-27b:1794590968.670790"
+        ],
+        [
+          1794590973.0989509,
+          2331,
+          "qwen/qwen3.8-27b:1794590973.098951"
+        ]
+      ],
+      "hdr_rem_req": 494,
+      "hdr_rem_tok": 3324,
+      "hdr_limit_req": 500,
+      "hdr_limit_tok": 4000,
+      "hdr_itpm_limit": null,
+      "hdr_otpm_limit": null,
+      "hdr_reset_tok_s": 2.1,
+      "hdr_ts": 1794590973.1139972
+    },
+    "openai/gpt-oss-120b": {
+      "rpd_used": 138,
+      "tpd_used": 180781,
+      "rpm_window": [],
+      "tpm_window": [],
+      "hdr_rem_req": 500,
+      "hdr_rem_tok": 8000,
+      "hdr_limit_req": 500,
+      "hdr_limit_tok": 8000,
+      "hdr_itpm_limit": null,
+      "hdr_otpm_limit": null,
+      "hdr_reset_tok_s": 2.1,
+      "hdr_ts": 1794589673.2384865
+    }
+  }
+}

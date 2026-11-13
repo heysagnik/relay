@@ -1,0 +1,40 @@
+request_id            , scenario, source  , start_time                      , first_token_ms, total_ms, status, retries, tokens_in, tokens_out, retrieval_setting, answer_grade
+ask-cli-001           , steady  , stand-in, 2026-11-10T10:09:54.565766+00:00,           2887,     3696, ok    ,       0,         0,          0, A                , correct
+eval-A-aisny-01       , steady  , stand-in, 2026-11-10T10:20:51.801304+00:00,           7717,     8420, ok    ,       0,         0,          0, A                , wrong
+eval-A-aisny-02       , steady  , stand-in, 2026-11-10T10:21:00.731151+00:00,           8450,     9261, ok    ,       0,         0,          0, A                , wrong
+eval-A-aisny-03       , steady  , stand-in, 2026-11-10T10:21:10.506216+00:00,           3408,     4220, ok    ,       0,         0,          0, A                , wrong
+eval-A-aisny-04       , steady  , stand-in, 2026-11-10T10:21:15.231036+00:00,           3697,     4514, ok    ,       0,         0,          0, A                , wrong
+eval-A-moshi-01       , steady  , stand-in, 2026-11-10T10:21:20.265773+00:00,           3038,     3802, ok    ,       0,         0,          0, A-degraded       , wrong
+eval-A-moshi-02       , steady  , stand-in, 2026-11-10T10:21:24.594989+00:00,           2671,     3161, ok    ,       0,         0,          0, A                , wrong
+eval-A-moshi-03       , steady  , stand-in, 2026-11-10T10:21:28.246804+00:00,           3074,     3553, ok    ,       0,         0,          0, A                , wrong
+eval-A-moshi-04       , steady  , stand-in, 2026-11-10T10:21:32.293981+00:00,               ,     7947, error ,       0,         0,          0, A                , wrong
+eval-A-dynchunk-01    , steady  , stand-in, 2026-11-10T10:21:40.745874+00:00,               ,     9835, error ,       0,         0,          0, A                , wrong
+eval-A-dynchunk-02    , steady  , stand-in, 2026-11-10T10:21:51.092556+00:00,               ,     9021, error ,       0,         0,          0, A                , wrong
+eval-A-dynchunk-03    , steady  , stand-in, 2026-11-10T10:22:00.633402+00:00,               ,     9336, error ,       0,         0,          0, A                , wrong
+eval-A-cross-01       , steady  , stand-in, 2026-11-10T10:22:10.483873+00:00,          12037,    12447, ok    ,       0,         0,          0, A                , wrong
+eval-A-unanswerable-01, steady  , stand-in, 2026-11-10T10:22:23.444938+00:00,           6471,     6956, ok    ,       0,         0,          0, A                , wrong
+eval-A-unanswerable-02, steady  , stand-in, 2026-11-10T10:22:30.903745+00:00,           3080,     3575, ok    ,       0,         0,          0, A                , wrong
+eval-A-unanswerable-03, steady  , stand-in, 2026-11-10T10:22:35.001742+00:00,               ,     7752, error ,       0,         0,          0, A                , wrong
+eval-A-unanswerable-04, steady  , stand-in, 2026-11-10T10:22:43.249111+00:00,               ,     9187, error ,       0,         0,          0, A                , wrong
+burst-0001            , burst   , stand-in, 2026-11-10T10:24:52.484216+00:00,           3758,     5521, ok    ,       0,         0,          0, A                , correct
+burst-0002            , burst   , stand-in, 2026-11-10T10:24:54.917026+00:00,           5337,     6465, ok    ,       0,         0,          0, A                , correct
+burst-0003            , burst   , stand-in, 2026-11-10T10:24:56.485318+00:00,           5945,     6361, ok    ,       0,         0,          0, A                , correct
+burst-0005            , burst   , stand-in, 2026-11-10T10:25:00.483473+00:00,               ,    12206, error ,       0,         0,          0, A                , 
+burst-0006            , burst   , stand-in, 2026-11-10T10:25:02.482492+00:00,               ,    14667, error ,       0,         0,          0, A                , 
+burst-0007            , burst   , stand-in, 2026-11-10T10:25:05.795816+00:00,               ,    11356, error ,       0,         0,          0, A                , 
+burst-0008            , burst   , stand-in, 2026-11-10T10:25:07.293117+00:00,               ,    19709, error ,       0,         0,          0, A                , 
+burst-0004            , burst   , stand-in, 2026-11-10T10:24:58.466157+00:00,               ,    28538, error ,       0,         0,          0, A                , 
+burst-0009            , burst   , stand-in, 2026-11-10T10:25:08.503723+00:00,               ,    23587, error ,       0,         0,          0, A                , 
+burst-0010            , burst   , stand-in, 2026-11-10T10:25:12.565356+00:00,               ,    19536, error ,       0,         0,          0, A                , 
+burst-0012            , burst   , stand-in, 2026-11-10T10:25:14.480103+00:00,               ,    28636, error ,       0,         0,          0, A                , 
+burst-0011            , burst   , stand-in, 2026-11-10T10:25:12.570473+00:00,               ,    30558, error ,       0,         0,          0, A                , 
+burst-0014            , burst   , stand-in, 2026-11-10T10:25:18.493328+00:00,               ,    28854, error ,       0,         0,          0, A                , 
+burst-0013            , burst   , stand-in, 2026-11-10T10:25:17.032294+00:00,               ,    30318, error ,       0,         0,          0, A                , 
+burst-0015            , burst   , stand-in, 2026-11-10T10:25:21.587514+00:00,               ,    32240, error ,       0,         0,          0, A                , 
+ask-27612             , steady  , stand-in, 2026-11-10T10:40:27.612031+00:00,           2143,     2643, ok    ,       0,         0,          0, A                , correct
+ask-04818             , steady  , stand-in, 2026-11-10T10:41:44.818982+00:00,           1961,     2463, ok    ,       0,         0,          0, A                , correct
+ask-63946             , steady  , real    , 2026-11-10T10:42:43.946932+00:00,           1155,     1415, ok    ,       0,      2498,        168, A                , correct
+ask-07794             , steady  , stand-in, 2026-11-10T10:45:07.794928+00:00,           1643,     2162, ok    ,       0,         0,          0, A                , correct
+ask-83869,steady,stand-in,2026-11-10T12:01:23.869906+00:00,1697,2552,ok,0,0,0,A,correct
+ask-01529,steady,stand-in,2026-11-10T12:01:41.529652+00:00,1449,1452,ok,0,0,0,A,refused_correctly
+debug-001,steady,stand-in,2026-11-13T04:31:18.484707+00:00,2318,3308,ok,0,0,0,A,correct

@@ -1,0 +1,6 @@
+{
+  "setting": "B",
+  "chunk_size_tokens": 150,
+  "chunk_overlap_tokens": 25,
+  "total_chunks": 641
+}

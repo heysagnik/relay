@@ -1,0 +1,1297 @@
+[
+  {
+    "timestamp": 1794306093.1312544,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:21:32 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306096.7310073,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:21:35 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306100.2397559,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:21:39 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306103.4415715,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:21:41 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306107.054433,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:21:45 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306110.5794916,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:21:49 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306113.7036707,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:21:52 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306116.7591262,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:21:56 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306120.11189,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:21:59 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306123.2717006,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:01 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306126.5809925,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:05 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306129.9681149,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:08 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306133.3378463,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:12 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14391",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306138.3322911,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:16 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14390",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306144.136426,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:23 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14389",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306155.7287855,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:34 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14385",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306159.2124715,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:38 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14385",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306162.751054,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:41 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14385",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306165.9054017,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:45 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14385",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306169.1921852,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:47 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14385",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306172.4345179,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:22:51 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14385",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306301.1959212,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:24:58 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306302.332363,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:24:58 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306307.3341913,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:03 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306307.3617077,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:03 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306307.3937838,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:03 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306307.4145555,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:03 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306312.6027792,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:09 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306312.6396856,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:09 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306312.6616328,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:09 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306312.684624,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:09 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306317.0606205,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:14 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306317.0882928,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:14 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306317.1243174,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:14 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306317.147271,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:14 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306321.6191034,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:18 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306321.6419933,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:18 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306321.6775372,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:18 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306321.7016926,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:18 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306326.910601,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:24 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306326.9522836,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:24 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306326.975577,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:24 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306326.9997044,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:24 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306331.912129,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:28 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306331.94206,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:28 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306332.018631,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:28 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306332.0750937,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:28 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306337.1862984,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:33 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306337.208008,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:33 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306337.2478795,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:33 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306337.2682102,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:33 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306343.0055242,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:39 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306343.053414,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:39 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306343.0775404,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:39 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306343.103297,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:39 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306347.2850235,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:44 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306347.314303,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:44 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306347.3425465,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:44 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306350.628923,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:50 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794306353.8220646,
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "headers": {
+      "date": "Tue, 10 Nov 2026 10:25:52 GMT",
+      "server": "uvicorn",
+      "x-ratelimit-limit-requests": "14400",
+      "x-ratelimit-limit-tokens": "6000",
+      "x-ratelimit-remaining-requests": "14393",
+      "x-ratelimit-remaining-tokens": "0",
+      "x-ratelimit-reset-requests": "12h4m",
+      "x-ratelimit-reset-tokens": "2.1s",
+      "retry-after": "2.5",
+      "content-length": "178",
+      "content-type": "application/json"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org-standin`. Please retry in 2.5s.\",\"type\":\"tokens_exceeded\",\"code\":\"rate_limit_exceeded\"}}"
+  },
+  {
+    "timestamp": 1794544618.094004,
+    "phase": "baseline_telemetry",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "latency_ms": 377,
+    "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "999",
+      "x-ratelimit-remaining-tokens": "7971",
+      "x-ratelimit-reset-requests": "1m26.4s",
+      "x-ratelimit-reset-tokens": "217ms"
+    },
+    "body": "{\"id\":\"chatcmpl-2716f1e7-6e92-4e4e-a2c0-d560f85f7a48\",\"object\":\"chat.completion\",\"created\":1794544616,\"model\":\"qwen/qwen3.8-27b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"pong\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"queue_time\":0.052920971,\"prompt_tokens\":19,\"prompt_time\":0.001324737,\"completion_tokens\":2,\"completion_time\":0.004221327,\"total_tokens\":21,\"total_time\":0.005546064},\"usage_breakdown\":null,\"system_fingerprint\":\"fp_4560dae850\",\"x_groq\":{\"id\":\"req_01m79"
+  },
+  {
+    "timestamp": 1794544619.8368347,
+    "phase": "baseline_telemetry",
+    "model": "openai/gpt-oss-120b",
+    "status_code": 200,
+    "latency_ms": 231,
+    "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "999",
+      "x-ratelimit-remaining-tokens": "7912",
+      "x-ratelimit-reset-requests": "1m26.4s",
+      "x-ratelimit-reset-tokens": "659ms"
+    },
+    "body": "{\"id\":\"chatcmpl-15569690-1082-46de-a63d-3f2803da7ed2\",\"object\":\"chat.completion\",\"created\":1794544617,\"model\":\"openai/gpt-oss-120b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning\":\"The user asks: \\\"Reply with\"},\"logprobs\":null,\"finish_reason\":\"length\"}],\"usage\":{\"queue_time\":0.1572236,\"prompt_tokens\":78,\"prompt_time\":0.002986218,\"completion_tokens\":10,\"completion_time\":0.020760015,\"total_tokens\":88,\"total_time\":0.023746233,\"completion_tokens_details\":{\"reasoning_toke"
+  },
+  {
+    "timestamp": 1794544621.3467858,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 958,
+    "total_ms": 961
+  },
+  {
+    "timestamp": 1794544623.5170019,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 100,
+    "total_ms": 342
+  },
+  {
+    "timestamp": 1794544625.0677917,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 132,
+    "total_ms": 139
+  },
+  {
+    "timestamp": 1794544626.4090762,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 92,
+    "total_ms": 96
+  },
+  {
+    "timestamp": 1794544627.717244,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 98,
+    "total_ms": 100
+  },
+  {
+    "timestamp": 1794544629.0208871,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 104,
+    "total_ms": 107
+  },
+  {
+    "timestamp": 1794544630.339728,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 105,
+    "total_ms": 260
+  },
+  {
+    "timestamp": 1794544631.8017251,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 113,
+    "total_ms": 114
+  },
+  {
+    "timestamp": 1794544633.1301067,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 124,
+    "total_ms": 127
+  },
+  {
+    "timestamp": 1794544634.4621458,
+    "phase": "latency_distribution",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "ttft_ms": 430,
+    "total_ms": 433
+  },
+  {
+    "timestamp": 1794544642.4002259,
+    "phase": "deliberate_429_probe",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 429,
+    "latency_ms": 43,
+    "headers": {
+      "date": "Fri, 13 Nov 2026 04:37:20 GMT",
+      "content-type": "application/json",
+      "content-length": "368",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "retry-after": "2",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "bom",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-remaining-requests": "968",
+      "x-ratelimit-reset-requests": "46m4.8s",
+      "x-request-id": "req_01m79k48adeap9e910rk7c2rfg",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "strict-transport-security": "max-age=15552000",
+      "cf-ray": "a59b14a20c8f7258-BOM",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body": "{\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m3sk3njserztkbq434cce4tt` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, Requested 1. Please try again in 2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"requests\",\"code\":\"rate_limit_exceeded\"}}\n"
+  },
+  {
+    "timestamp": 1794544644.4026513,
+    "phase": "recovery_probe",
+    "model": "qwen/qwen3.8-27b",
+    "status_code": 200,
+    "latency_ms": 110,
+    "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "967",
+      "x-ratelimit-remaining-tokens": "7982",
+      "x-ratelimit-reset-requests": "47m31.2s",
+      "x-ratelimit-reset-tokens": "134ms"
+    }
+  }
+]
